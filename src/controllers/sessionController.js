@@ -2,6 +2,7 @@ import express from 'express';
 const { Request, Response } = express;
 import supabase from "../config/supabaseClient.js";
 
+// log a work session
 export const logSession = async (req, res) => {
   const { userId, routineId, startTime, endTime, duration, sessionDate } = req.body;
 
